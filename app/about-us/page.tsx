@@ -32,7 +32,7 @@ const Page = () => {
                         <li>Help overcome feelings of overwhelm.</li>
                     </ul>
                     <p className={classes.textContent}>
-                        Join our community, and together let's turn daily tasks into opportunities for growth and success.
+                        Join our community, and together let&apos;s turn daily tasks into opportunities for growth and success.
                     </p>
                 </section>
             </main>

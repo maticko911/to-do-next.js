@@ -15,8 +15,18 @@ import Tasks from "../../components/tasks";
 import React, { useState, useEffect } from "react";
 import classes from "./page.module.css";
 
+interface CardProps {
+    id: string;
+    image: string | ArrayBuffer | null;
+    author: string;
+    title: string;
+    description: string;
+    timestamp: string;
+    onUpdate: () => void;
+}
+
 export default function Home() {
-    const [tasks, setTasks] = useState<any[]>([]);
+    const [tasks, setTasks] = useState<CardProps[]>([]);
 
     // Naložimo naloge iz localStorage
     useEffect(() => {

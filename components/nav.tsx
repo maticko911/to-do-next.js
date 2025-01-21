@@ -61,7 +61,7 @@ export default function Nav(): React.JSX.Element {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollY]);
+    }, [handleScroll]);
 
     return (
         <>

@@ -49,7 +49,7 @@ export default function Card({
 
     const handleDelete = () => {
         const savedTasks = JSON.parse(localStorage.getItem("tasks") || "[]");
-        const updatedTasks = savedTasks.filter((task: any) => task.id !== id);
+        const updatedTasks = savedTasks.filter((task: CardProps) => task.id !== id);
         localStorage.setItem("tasks", JSON.stringify(updatedTasks));
 
         toast({
@@ -69,7 +69,7 @@ export default function Card({
 
     const handleSave = () => {
         const savedTasks = JSON.parse(localStorage.getItem("tasks") || "[]");
-        const updatedTasks = savedTasks.map((task: any) =>
+        const updatedTasks = savedTasks.map((task: CardProps) =>
             task.id === id
                 ? { ...task, title: editedTitle, description: editedDescription }
                 : task
