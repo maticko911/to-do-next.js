@@ -1,0 +1,19 @@
+.second {
+    text-align: center;
+    justify-content: initial;
+    background: black;
+    padding: 50px 0;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.footerText {
+    font-size: 1rem;
+    color: #D4D4D4;
+    font-weight: 400;
+}

@@ -1,0 +1,176 @@
+.body {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+.header {
+    padding: 80px 20px;
+    background-color: #000000;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+    margin: 40px;
+}
+
+.headerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pageTitle {
+    font-size: 4rem;
+    color: #FF00FF;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(255, 0, 255, 1), 0px 0px 40px rgba(255, 0, 255, 0.8); /* Neon glow effect */
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.pageTitle:hover {
+    text-shadow: 0px 0px 30px rgba(255, 0, 255, 1), 0px 0px 60px rgba(255, 0, 255, 0.8);
+}
+
+.pageDescription {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    animation: slideIn 1.5s ease-out;
+}
+
+.missionSection, .beliefsSection {
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.textContent {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #FFFFFF;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.bulletList {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 40px;
+    color: #D4D4D4;
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.bulletList li {
+    margin-bottom: 15px;
+}
+
+.bulletList li::marker {
+    color: #FFD700;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.footerText {
+    font-size: 1rem;
+    color: #D4D4D4;
+    font-weight: 400;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .pageTitle {
+        font-size: 4.5rem;
+    }
+
+    .pageDescription {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .sectionTitle {
+        font-size: 3.5rem;
+    }
+
+    .textContent {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        padding: 150px 40px;
+    }
+
+    .pageTitle {
+        font-size: 5rem;
+    }
+
+    .pageDescription {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sectionTitle {
+        font-size: 4rem;
+    }
+
+    .textContent {
+        font-size: 1.8rem;
+    }
+}
